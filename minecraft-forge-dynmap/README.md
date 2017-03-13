@@ -6,14 +6,10 @@ docker run -it -p 25565:25565 -p 8123:8123 --name mc.forge merciless210/minecraf
 -p 8123:8123    [default dynmap port]
 
 #VOLUMES
--v /data/mod:/minecraft/mod
+-v /data/mods:/minecraft/mods
 -v /data/world:/minecraft/world
 -v /data/logs:/minecraft/logs
 -v /data/dynmap:/minecraft/dynmap
-
--or-
-
--v /minecraft:/minecraft
 
 #Dynmap commands
 https://github.com/webbukkit/dynmap/wiki/Commands
