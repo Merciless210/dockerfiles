@@ -1,4 +1,4 @@
-FROM merciless210/centos6_java8 
+FROM merciless210/centos6-java8 
 
 RUN mkdir /minecraft
 
