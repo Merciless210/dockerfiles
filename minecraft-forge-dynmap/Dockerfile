@@ -14,6 +14,7 @@ RUN curl -SL https://minecraft.curseforge.com/projects/dynmapforge/files/2380603
 RUN java -jar /minecraft/minecraft_server.1.11.2.jar
 RUN sed -i s/false/true/g /minecraft/eula.txt 
 
+VOLUME ["/minecraft","/minecraft/mods","/minecraft/world","minecraft/logs","minecraft/dynmap"]
 
 EXPOSE 25565 25575 8123 
 
