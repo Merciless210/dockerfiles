@@ -17,7 +17,6 @@ To find a running container name use: docker -ps
 -p 8123:8123    #default dynmap port
 
 #VOLUMES
--v /data/mods:/minecraft/mods
 -v /data/world:/minecraft/world
 -v /data/logs:/minecraft/logs
 -v /data/dynmap:/minecraft/dynmap
