@@ -16,6 +16,6 @@ RUN sed -i s/false/true/g /minecraft/eula.txt
 
 VOLUME ["/dynmap","/world","/logs"]
 
-EXPOSE 25565 25575 8123 
+EXPOSE 25565 8123 
 
 CMD /bin/bash
