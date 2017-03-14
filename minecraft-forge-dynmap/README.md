@@ -1,5 +1,5 @@
 #RUN CONTAINER with all VOLUMES and PORTS
-docker run -it -p 25565:25565 -p 8123:8123 -v /data/dynmap:/minecraft/dynmap -v /data/logs:/minecraft/logs -v /data/world:/minecraft/world -v /data/mods:/minecraft/mods --name mc.forge merciless210/minecraft-forge-dynmap
+docker run -it -p 25565:25565 -p 8123:8123 -v /data/dynmap:/minecraft/dynmap -v /data/logs:/minecraft/logs -v /data/world:/minecraft/world --name mc.forge merciless210/minecraft-forge-dynmap
 
 Container will open in BASH within the following dir "/minecraft". To start MC server use the following command:
 java -jar -Xms1G -Xmx4G -d64 forge-1.11.2-13.20.0.2214-universal.jar
