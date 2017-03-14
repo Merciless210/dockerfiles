@@ -8,7 +8,7 @@ java -jar -Xms1G -Xmx2G -d64 forge-1.11.2-13.20.0.2214-universal.jar
 ```
 To detach container press CTL+P, then CTL+Q
 To reattach container use: ```docker attach [container.name]``` 
-To find a running container name use: docker -ps 
+To find a running container name use: docker ps 
 
 ## JAVA
 ```
