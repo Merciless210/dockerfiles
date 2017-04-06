@@ -6,19 +6,24 @@ merciless210/minecraft-forge-dynmap:1.8.9 [includes Forge Essentials]
 
 ## RUN CONTAINER with all Volumes and Ports 
 ```
+v 1.11.2
 docker run -it -p 25565:25565 -p 8123:8123 -v /data/dynmap:/minecraft/dynmap -v /data/logs:/minecraft/logs -v /data/world:/minecraft/world --name mc.forge merciless210/minecraft-forge-dynmap
 ```
-v 1.8.9
+
 ```
+v 1.8.9
 docker run -it -p 25565:25565 -p 8123:8123 -v /data/dynmap:/minecraft/dynmap -v /data/logs:/minecraft/logs -v /data/world:/minecraft/world --name mc.forge merciless210/minecraft-forge-dynmap:1.8.9
 ```
 
 Container will open in BASH within the following dir "/minecraft". To start MC server use the following command:
+
 ```
-java -jar -Xms1G -Xmx2G -d64 forge-1.11.2-13.20.0.2214-universal.jar
+v 1.11.2
+java -jar -Xms1G -Xmx2G -d64 forge-1.11.2-13.20.0.2264-universal.jar
+```
+
 ```
 v 1.8.9
-```
 java -jar -Xms1G -Xmx2G -d64 forge-1.8.9-11.15.1.1902-1.8.9-universal.jar
 ```
 To detach container press CTL+P, then CTL+Q
