@@ -5,7 +5,7 @@ RUN mkdir /minecraft
 WORKDIR /minecraft
 
 ENV MINECRAFT_VERSION 1.11.2
-ENV FORGE_VERSION 13.20.0.2214
+ENV FORGE_VERSION 13.20.0.2264
 
 RUN curl -sS http://files.minecraftforge.net/maven/net/minecraftforge/forge/${MINECRAFT_VERSION}-${FORGE_VERSION}/forge-${MINECRAFT_VERSION}-${FORGE_VERSION}-installer.jar > /minecraft/forge-${MINECRAFT_VERSION}-${FORGE_VERSION}-installer.jar
 RUN java -jar /minecraft/forge-${MINECRAFT_VERSION}-${FORGE_VERSION}-installer.jar --installServer
