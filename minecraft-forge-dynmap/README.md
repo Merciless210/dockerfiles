@@ -19,7 +19,7 @@ Container will open in BASH within the following dir "/minecraft". To start MC s
 
 ```
 v 1.11.2
-java -jar -Xms1G -Xmx2G -d64 forge-1.11.2-13.20.0.2264-universal.jar
+java -jar -Xms1G -Xmx2G -d64 forge-1.11.2-13.20.0.2279-universal.jar
 ```
 
 ```
