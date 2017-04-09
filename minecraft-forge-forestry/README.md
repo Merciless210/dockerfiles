@@ -1,6 +1,6 @@
 ## RUN CONTAINER with all Volumes and Ports 
 ```
-docker run -it -p 25565:25565 -p 8123:8123 -v /data/config:/minecraft/config -v /data/logs:/minecraft/logs -v /data/world:/minecraft/world --name mc.forest merciless210/minecraft-forge-forestry
+docker run -it -p 25565:25565 -v /data/config:/minecraft/config -v /data/logs:/minecraft/logs -v /data/world:/minecraft/world --name mc.forest merciless210/minecraft-forge-forestry
 ```
 Container will open in BASH within the following dir "/minecraft". To start MC server use the following command:
 ```
@@ -23,11 +23,10 @@ For 32-bit systems remove:
 ## Ports
 ```
 -p 25565:25565  #default minecraft server port
--p 8123:8123    #default dynmap port
 ```
 If you need to change ports:
 ```
--p [port.on.host]:8123  #example -p 80:8123 
+-p [port.on.host]:25565  #example -p 80:8123 
 ```
 
 ## Volumes
