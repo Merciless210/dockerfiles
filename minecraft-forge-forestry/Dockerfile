@@ -22,7 +22,8 @@ RUN curl -SL ${INDUSTRIAL_URL} -o /minecraft/mods/${INDUSTRIAL_VERSION}
 RUN curl -SL ${BUILDCRAFT_URL} -o /minecraft/mods/${BUILDCRAFT_VERSION}
 RUN sed -i s/false/true/g /minecraft/eula.txt
 
+VOLUME ["/config","/world","/logs"]
 
-EXPOSE 25565 8123
+EXPOSE 25565
 
 CMD /bin/bash
