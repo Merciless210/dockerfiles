@@ -6,8 +6,8 @@ WORKDIR /minecraft
 
 ENV MINECRAFT_VERSION 1.7.10
 ENV FORGE_VERSION 10.13.4.1614-1.7.10
-ENV FORESTRY_VERSION forestry_1.11.2-5.3.2.58.jar
-ENV FORESTRY_URL https://minecraft.curseforge.com/projects/forestry/files/2333823/download
+ENV FORESTRY_VERSION forestry_1.7.10-4.2.16.64.jar
+ENV FORESTRY_URL https://mods.curse.com/mc-mods/minecraft/forestry/download
 ENV INDUSTRIAL_VERSION industrialcraft-2-2.2.816-experimental.jar
 ENV INDUSTRIAL_URL http://minecraft.curseforge.com/projects/industrial-craft/files/2286867/download
 ENV BUILDCRAFT_VERSION buildcraft-7.1.21.jar
