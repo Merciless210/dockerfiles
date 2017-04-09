@@ -35,3 +35,5 @@ If you need to change ports:
 -v /data/logs:/minecraft/logs
 -v /data/dynmap:/minecraft/config
 ```
+If you run into any permission issues you can use add ```:Z``` at the end of those volumes.
+Example: ```-v /data/world:/minecraft/world:Z```
