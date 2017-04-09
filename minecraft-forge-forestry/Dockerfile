@@ -17,9 +17,11 @@ RUN curl -sS http://files.minecraftforge.net/maven/net/minecraftforge/forge/${MI
 RUN java -jar /minecraft/forge-${MINECRAFT_VERSION}-${FORGE_VERSION}-installer.jar --installServer
 RUN rm -f /minecraft/forge-${MINECRAFT_VERSION}-${FORGE_VERSION}-installer.jar
 RUN java -jar forge-${MINECRAFT_VERSION}-${FORGE_VERSION}-universal.jar
-RUN curl -SL https://minecraft.curseforge.com/projects/dynmapforge/files/2380593/download -o /minecraft/mods/Dynmap-2.4-forge-1.8.9.jar
-RUN curl -SL https://minecraft.curseforge.com/projects/forge-essentials-74735/files/2341980/download -o /minecraft/mods/forgeessentials-1.8.9-1.8.5.103-server.jar
+RUN curl -SL ${FORESTRY_URL} -o /minecraft/mods/${FORESTRY_VERSION}
+RUN curl -SL ${INDUSTRIAL_URL} -o /minecraft/mods/${INDUSTRIAL_VERSION}
+RUN curl -SL ${BUILDCRAFT_URL} -o /minecraft/mods/${BUILDCRAFT_VERSION}
 RUN sed -i s/false/true/g /minecraft/eula.txt
+
 
 EXPOSE 25565 8123
 
