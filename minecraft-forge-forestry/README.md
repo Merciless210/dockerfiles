@@ -4,7 +4,7 @@ docker run -it -p 25565:25565 -v /data/config:/minecraft/config -v /data/logs:/m
 ```
 Container will open in BASH within the following dir "/minecraft". To start MC server use the following command:
 ```
-java -jar -Xms1G -Xmx2G -d64 forge-1.11.2-13.20.0.2279-universal.jar
+java -jar -Xms1G -Xmx2G -d64 forge-1.7.10-10.13.4.1614-1.7.10-universal.jar
 ```
 
 To detach container press CTL+P, then CTL+Q
