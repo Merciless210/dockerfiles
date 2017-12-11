@@ -6,9 +6,9 @@ merciless210/minecraft-forge-dynmap:1.8.9 [includes Forge Essentials]
 ```
 
 ## RUN CONTAINER with all Volumes and Ports 
-At the moment I am unable to find a stable Dynmap build for 1.12
+At the moment I am unable to find a stable Dynmap build for 1.12.2
 ```
-v 1.12
+v 1.12.2
 docker run -it -p 25565:25565 -p 8123:8123 -v /data/logs:/minecraft/logs -v /data/world:/minecraft/world --name mc.forge merciless210/minecraft-forge-dynmap
 ```
 
@@ -25,7 +25,7 @@ docker run -it -p 25565:25565 -p 8123:8123 -v /data/dynmap:/minecraft/dynmap -v 
 Container will open in BASH within the following dir "/minecraft". To start MC server use the following command:
 ```
 v 1.12
-java -jar -Xms1G -Xmx2G -d64 forge-1.12-14.21.0.2373-universal.jar
+java -jar -Xms1G -Xmx2G -d64 forge-1.12.2-14.23.1.2562-universal.jar
 ```
 
 ```
