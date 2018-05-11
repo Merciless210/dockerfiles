@@ -25,7 +25,7 @@ docker run -it -p 25565:25565 -p 8123:8123 -v /data/dynmap:/minecraft/dynmap -v 
 Container will open in BASH within the following dir "/minecraft". To start MC server use the following command:
 ```
 v 1.12
-java -jar -Xms1G -Xmx2G -d64 forge-1.12.2-14.23.3.2673-universal.jar
+java -jar -Xms1G -Xmx2G -d64 forge-1.12.2-14.23.3.2681-universal.jar
 ```
 
 ```
