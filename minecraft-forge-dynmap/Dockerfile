@@ -1,6 +1,7 @@
 FROM merciless210/centos6-java8 
 
 RUN mkdir /minecraft
+RUN chmod -R 700 /minecraft
 
 WORKDIR /minecraft
 
@@ -14,7 +15,6 @@ RUN curl -sS http://files.minecraftforge.net/maven/net/minecraftforge/forge/${MI
 RUN java -jar /minecraft/forge-${MINECRAFT_VERSION}-${FORGE_VERSION}-installer.jar --installServer
 RUN rm -f /minecraft/forge-${MINECRAFT_VERSION}-${FORGE_VERSION}-installer.jar
 #Used to download DYNMAP
-RUN chmod -R 700 /minecraft
 RUN curl -SL ${DYNMAP_URL} -o /minecraft/mods/${DYNMAP_VERSION}
 RUN java -jar /minecraft/minecraft_server.${MINECRAFT_VERSION}.jar
 RUN sed -i s/false/true/g /minecraft/eula.txt 
