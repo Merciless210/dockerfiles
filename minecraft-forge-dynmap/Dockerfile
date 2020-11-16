@@ -1,7 +1,7 @@
 FROM merciless210/centos6-java8 
 
 RUN mkdir /minecraft
-RUN chmod -R 700 /minecraft
+RUN chmod -R 755 /minecraft
 
 WORKDIR /minecraft
 
