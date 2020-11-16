@@ -1,5 +1,8 @@
 ## Version
 ```
+Have yet to test version 1.16.3, but tag is availble.
+merciless210/minecraft-forge-dynmap:1.16.3 [Dynmap not included]
+
 merciless210/minecraft-forge-dynmap:latest [Dynmap not included]
 merciless210/minecraft-forge-dynmap:1.11.2 
 merciless210/minecraft-forge-dynmap:1.8.9 [includes Forge Essentials]
