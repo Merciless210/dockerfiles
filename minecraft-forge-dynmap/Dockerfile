@@ -5,8 +5,8 @@ RUN mkdir /minecraft
 
 WORKDIR /minecraft
 
-ENV MINECRAFT_VERSION 1.12.2
-ENV FORGE_VERSION 14.23.3.2681
+ENV MINECRAFT_VERSION 1.16.3
+ENV FORGE_VERSION 34.1.42
 #Disabled - unable to find correct version or dynmap
 #ENV DYNMAP_URL https://www.curseforge.com/minecraft/mc-mods/dynmapforge/download/3068729/file
 #ENV DYNMAP_VERSION Dynmap-3.1-beta4-forge-1.12.2.jar
