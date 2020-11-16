@@ -14,7 +14,7 @@ docker run -it -p 25565:25565 -p 8123:8123 -v /data/logs:/minecraft/logs -v /dat
 
 ```
 v 1.11.2
-docker run -it -p 25565:25565 -p 8123:8123 -v /data/dynmap:/minecraft/dynmap -v /data/logs:/minecraft/logs -v /data/world:/minecraft/world --name mc.forge merciless210/minecraft-forge-dynmap
+docker run -it -p 25565:25565 -p 8123:8123 -v /data/dynmap:/minecraft/dynmap -v /data/logs:/minecraft/logs -v /data/world:/minecraft/world --name mc.forge merciless210/minecraft-forge-dynmap:1.11.2
 ```
 
 ```
